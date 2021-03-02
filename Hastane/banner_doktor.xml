@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/banner/four.jpg</ImageUrl>
+    <NavigateUrl>https://www.daiichi-sankyo.com.tr/</NavigateUrl>
+    <AlternateText>Daiichi Sankyo</AlternateText>
+    <Keyword>Daiichi</Keyword>
+    <Impressions>5</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/banner/three.jpg</ImageUrl>
+    <NavigateUrl>https://www.aliraif.com.tr/</NavigateUrl>
+    <AlternateText>AliRaif</AlternateText>
+    <Keyword>AliRaif</Keyword>
+    <Impressions>5</Impressions>
+  </Ad>
+</Advertisements>

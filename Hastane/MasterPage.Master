@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="IleriNet_Final2.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 576px;
+        }
+
+        .auto-style14 {
+            z-index: 100;
+            left: 50px;
+            position: absolute;
+            top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <br />
+    <table style="z-index: 101; left: 100px; position: absolute; top: 160px; color: #fff; font-family: 'Helvetica';">
+                <tr>
+                    <td bgcolor="#FF9999" class="auto-style1">
+         
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ansayfa.aspx" Font-Bold="True">Ana Sayfa</asp:HyperLink>
+                 
+                    </td>
+
+                    <td>
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/doktor_anasayfa.aspx" Font-Bold="True">Doktor</asp:HyperLink>
+                    </td>
+
+                    <td>
+                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/hasta_anasayfa.aspx" Font-Bold="True">Hasta</asp:HyperLink>
+
+                    </td>
+                    <br />
+                    <td>
+                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/sekreter_anasayfa.aspx" Font-Bold="True">Sekreter </asp:HyperLink>
+                    </td>
+                 
+                </tr>
+            </table>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <asp:Image ID="Image1" runat="server" Height="1300px" ImageUrl="~/pics/Hospital Image.png" Width="1700px" CssClass="auto-style14" />
+            <br />
+            <br />
+            <br />
+            <center> 
+
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/anasayfa.aspx">Anasayfa</asp:HyperLink></center>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

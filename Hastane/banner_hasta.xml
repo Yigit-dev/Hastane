@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/banner/one.jpg</ImageUrl>
+    <NavigateUrl>https://www.rizomtatilkoyu.com/</NavigateUrl>
+    <AlternateText>banner</AlternateText>
+    <Keyword>banner</Keyword>
+    <Impressions>5</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/banner/two.jpg</ImageUrl>
+    <NavigateUrl>https://www.alizetatilkoyu.com/</NavigateUrl>
+    <AlternateText>banner</AlternateText>
+    <Keyword>banner</Keyword>
+    <Impressions>5</Impressions>
+  </Ad>
+</Advertisements>

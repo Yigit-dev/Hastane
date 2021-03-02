@@ -1,0 +1,300 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{22FCB01D-1E31-4CF2-84F2-1152837E8876}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IleriNet_Final2</RootNamespace>
+    <AssemblyName>IleriNet-Final2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44380</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin_anasayfa.aspx" />
+    <Content Include="admin_doktor_profilleri.aspx" />
+    <Content Include="admin_giris.aspx" />
+    <Content Include="admin_hasta_bilgi_girisi.aspx" />
+    <Content Include="admin_hasta_profilleri.aspx" />
+    <Content Include="admin_randevular.aspx" />
+    <Content Include="banner_doktor.xml" />
+    <Content Include="banner_hasta.xml" />
+    <Content Include="doktor_hasta_bilgi_girisi.aspx" />
+    <Content Include="doktor_randevularim.aspx" />
+    <Content Include="hasta_doktor_bilgi.aspx" />
+    <Content Include="hasta_profilim.aspx" />
+    <Content Include="hasta_randevularim.aspx" />
+    <Content Include="MasterPage.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="anasayfa.aspx" />
+    <Content Include="doktor_anasayfa.aspx" />
+    <Content Include="doktor_giris.aspx" />
+    <Content Include="doktor_kayitol.aspx" />
+    <Content Include="hasta_anasayfa.aspx" />
+    <Content Include="hasta_giris.aspx" />
+    <Content Include="hasta_kayitol.aspx" />
+    <Content Include="hasta_randevu_al.aspx" />
+    <Content Include="sekreter_anasayfa.aspx" />
+    <Content Include="sekreter_giris.aspx" />
+    <Content Include="sekreter_kayitol.aspx" />
+    <Content Include="sekreter_randevular.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin_anasayfa.aspx.cs">
+      <DependentUpon>admin_anasayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_anasayfa.aspx.designer.cs">
+      <DependentUpon>admin_anasayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_doktor_profilleri.aspx.cs">
+      <DependentUpon>admin_doktor_profilleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_doktor_profilleri.aspx.designer.cs">
+      <DependentUpon>admin_doktor_profilleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_giris.aspx.cs">
+      <DependentUpon>admin_giris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_giris.aspx.designer.cs">
+      <DependentUpon>admin_giris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_hasta_bilgi_girisi.aspx.cs">
+      <DependentUpon>admin_hasta_bilgi_girisi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_hasta_bilgi_girisi.aspx.designer.cs">
+      <DependentUpon>admin_hasta_bilgi_girisi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_hasta_profilleri.aspx.cs">
+      <DependentUpon>admin_hasta_profilleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_hasta_profilleri.aspx.designer.cs">
+      <DependentUpon>admin_hasta_profilleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_randevular.aspx.cs">
+      <DependentUpon>admin_randevular.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_randevular.aspx.designer.cs">
+      <DependentUpon>admin_randevular.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="anasayfa.aspx.cs">
+      <DependentUpon>anasayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="anasayfa.aspx.designer.cs">
+      <DependentUpon>anasayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="doktor_anasayfa.aspx.cs">
+      <DependentUpon>doktor_anasayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="doktor_anasayfa.aspx.designer.cs">
+      <DependentUpon>doktor_anasayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="doktor_giris.aspx.cs">
+      <DependentUpon>doktor_giris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="doktor_giris.aspx.designer.cs">
+      <DependentUpon>doktor_giris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="doktor_hasta_bilgi_girisi.aspx.cs">
+      <DependentUpon>doktor_hasta_bilgi_girisi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="doktor_hasta_bilgi_girisi.aspx.designer.cs">
+      <DependentUpon>doktor_hasta_bilgi_girisi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="doktor_kayitol.aspx.cs">
+      <DependentUpon>doktor_kayitol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="doktor_kayitol.aspx.designer.cs">
+      <DependentUpon>doktor_kayitol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="doktor_randevularim.aspx.cs">
+      <DependentUpon>doktor_randevularim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="doktor_randevularim.aspx.designer.cs">
+      <DependentUpon>doktor_randevularim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hasta_anasayfa.aspx.cs">
+      <DependentUpon>hasta_anasayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hasta_anasayfa.aspx.designer.cs">
+      <DependentUpon>hasta_anasayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hasta_doktor_bilgi.aspx.cs">
+      <DependentUpon>hasta_doktor_bilgi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hasta_doktor_bilgi.aspx.designer.cs">
+      <DependentUpon>hasta_doktor_bilgi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hasta_giris.aspx.cs">
+      <DependentUpon>hasta_giris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hasta_giris.aspx.designer.cs">
+      <DependentUpon>hasta_giris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hasta_kayitol.aspx.cs">
+      <DependentUpon>hasta_kayitol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hasta_kayitol.aspx.designer.cs">
+      <DependentUpon>hasta_kayitol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hasta_profilim.aspx.cs">
+      <DependentUpon>hasta_profilim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hasta_profilim.aspx.designer.cs">
+      <DependentUpon>hasta_profilim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hasta_randevularim.aspx.cs">
+      <DependentUpon>hasta_randevularim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hasta_randevularim.aspx.designer.cs">
+      <DependentUpon>hasta_randevularim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hasta_randevu_al.aspx.cs">
+      <DependentUpon>hasta_randevu_al.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hasta_randevu_al.aspx.designer.cs">
+      <DependentUpon>hasta_randevu_al.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sekreter_anasayfa.aspx.cs">
+      <DependentUpon>sekreter_anasayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sekreter_anasayfa.aspx.designer.cs">
+      <DependentUpon>sekreter_anasayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sekreter_giris.aspx.cs">
+      <DependentUpon>sekreter_giris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sekreter_giris.aspx.designer.cs">
+      <DependentUpon>sekreter_giris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sekreter_kayitol.aspx.cs">
+      <DependentUpon>sekreter_kayitol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sekreter_kayitol.aspx.designer.cs">
+      <DependentUpon>sekreter_kayitol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sekreter_randevular.aspx.cs">
+      <DependentUpon>sekreter_randevular.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sekreter_randevular.aspx.designer.cs">
+      <DependentUpon>sekreter_randevular.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50468</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44380/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
